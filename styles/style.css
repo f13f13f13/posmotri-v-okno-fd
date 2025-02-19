@@ -6,7 +6,6 @@
 
 html {
   block-size: 100%;
-  background-color: red;
 }
 
 .page {
@@ -19,7 +18,6 @@ html {
   font-size: 18px;
   background-color: #1b1919;
   place-items: center;
-  background-color: fuchsia;
 }
 
 h1,
