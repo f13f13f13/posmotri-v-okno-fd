@@ -123,7 +123,7 @@ ol {
 .search-form__fieldset-title {
   margin-bottom: 4px;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
@@ -147,7 +147,7 @@ ol {
 а черезе ::before реализовать не получилось.
 Пришлось добавить span в разметку*/
 
-.content__accent-hyphen { 
+.content__accent-hyphen {
   display: inline;
   position: relative;
   bottom: 8px;
@@ -175,7 +175,7 @@ ol {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   line-clamp: 4;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .visually-hidden {
