@@ -87,7 +87,7 @@ ol {
 
 .content__list-container {
   position: relative;
-  max-height: 298px;
+  block-size: 298px;
   overflow: auto;
 }
 
@@ -100,9 +100,12 @@ ol {
 
 .content__list {
   display: grid;
-  gap: 30px;
-  margin-bottom: 30px;
 }
+
+.content__list-item:not(:last-child) {
+  padding-bottom: 30px;
+}
+
 
 .content__video-card {
   display: flex;
@@ -129,7 +132,7 @@ ol {
 }
 
 .title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 91%;
@@ -141,20 +144,10 @@ ol {
   color: #545050;
 }
 
-/*Приветствую! Спасибо за ревью и разбор ошибок! 
-Надеюсь я верно понял замечание и дело в дефисе.
-Не нашел свойств отвечающие за позиционированние отдельных слов,
-а черезе ::before реализовать не получилось.
-Пришлось добавить span в разметку*/
-
-.content__accent-hyphen {
-  display: inline;
-  position: relative;
-  bottom: 8px;
-}
+/*Приветствую! Спасибо за ревью и разбор ошибок!*/
 
 .content__video-card-title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 110%;
@@ -245,10 +238,6 @@ ol {
   display: block;
 }
 
-.search-form__label-text:hover {
-  text-decoration: underline;
-}
-
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
@@ -273,6 +262,7 @@ ol {
 
 .more-button {
   width: 100%;
+  margin-top: 30px;
 }
 
 .button:hover {
